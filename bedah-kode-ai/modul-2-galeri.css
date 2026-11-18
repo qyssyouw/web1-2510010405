@@ -1,0 +1,52 @@
+body {
+  font-family: Arial;
+  font-size: 12px;
+  color: #999;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#judul-utama {
+  color: red !important;
+}
+
+.galeri {
+  display: flex;
+}
+
+.kartu {
+  width: 400px;
+  float: left;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.kartu img {
+  width: 400px;
+  height: 300px;
+}
+
+.kartu h3 {
+  color: red !important;
+  font-size: 18px;
+}
+
+.tombol {
+  background: #ffcc00;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+@media (max-width: 1200px) {
+  .kartu {
+    width: 33%;
+  }
+}
