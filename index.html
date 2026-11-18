@@ -7,6 +7,7 @@
 
     <title>Sasirangan Banua | Kain Khas Banjar</title>
      <link rel="stylesheet" href="css/style.css">
+     <script src="js/katalog.js" defer></script> 
 </head>
 <body>
 <!-- ========== HEADER & NAVIGASI ========== -->
@@ -42,7 +43,7 @@
 
     </section> <!-- BAGIAN KATALOG -->
 <section class="bagian" id="katalog">
-
+    
     <h2>Katalog Produk</h2>
 
     <p>
@@ -50,92 +51,55 @@
         Sasirangan khas Kalimantan Selatan.
     </p>
 
-    <div class="katalog-grid">
+    <div class="kontrol-katalog">
+        <div class="kolom">
+        <label for="cari">Cari produk</label>
+        <input type="search" id="cari"
+            placeholder="Contoh: kemeja, selendang">
+    </div>
 
-        <!-- PRODUK 1 -->
-        <article class="kartu">
-            <img src="img/gigi-haruan.svg"
-                 alt="Kain Sasirangan motif Gigi Haruan"
-                 width="600" height="400">
+    <div class="filter" role="group" aria-label="Filter kategori">
 
-            <div class="kartu-isi">
-                <h3>Kain Motif Gigi Haruan</h3>
-                <p>Kain katun dengan motif zig-zag khas Banjar.</p>
-                <p class="harga">Rp185.000</p>
-            </div>
-        </article>
+        <button type="button"
+            class="tombol-filter aktif"
+            data-kategori="semua"
+            aria-pressed="true">
+            Semua
+        </button>
 
+        <button type="button"
+            class="tombol-filter"
+            data-kategori="kain"
+            aria-pressed="false">
+            Kain
+        </button>
 
-        <!-- PRODUK 2 -->
-        <article class="kartu">
-            <img src="img/kambang-kacang.svg"
-                 alt="Kain Sasirangan motif Kambang Kacang"
-                 width="600" height="400">
+        <button type="button"
+            class="tombol-filter"
+            data-kategori="pakaian"
+            aria-pressed="false">
+            Pakaian
+        </button>
 
-            <div class="kartu-isi">
-                <h3>Kain Motif Kambang Kacang</h3>
-                <p>Motif bunga yang melambangkan keakraban.</p>
-                <p class="harga">Rp175.000</p>
-            </div>
-        </article>
-
-
-        <!-- PRODUK 3 -->
-        <article class="kartu">
-            <img src="img/iris-pudak.svg"
-                 alt="Selendang Sasirangan motif Iris Pudak"
-                 width="600" height="400">
-
-            <div class="kartu-isi">
-                <h3>Selendang Iris Pudak</h3>
-                <p>Selendang tradisional dengan motif khas Banjar.</p>
-                <p class="harga">Rp120.000</p>
-            </div>
-        </article>
-
-
-        <!-- PRODUK 4 -->
-        <article class="kartu">
-            <img src="img/bayam-raja.svg"
-                 alt="Kain Sasirangan motif Bayam Raja"
-                 width="600" height="400">
-
-            <div class="kartu-isi">
-                <h3>Kemeja Bayam Raja</h3>
-                <p>Kemeja bermotif tradisional Kalimantan Selatan.</p>
-                <p class="harga">Rp250.000</p>
-            </div>
-        </article>
-
-
-        <!-- PRODUK 5 -->
-        <article class="kartu">
-            <img src="img/naga-balimbur.svg"
-                 alt="Produk Sasirangan motif Naga Balimbur"
-                 width="600" height="400">
-
-            <div class="kartu-isi">
-                <h3>Tas Naga Balimbur</h3>
-                <p>Tas dengan motif khas budaya Banjar.</p>
-                <p class="harga">Rp95.000</p>
-            </div>
-        </article>
-
-
-        <!-- PRODUK 6 -->
-        <article class="kartu">
-            <img src="img/ombak-sinapur-karang.svg"
-                 alt="Kain Sasirangan motif Ombak Sinapur Karang"
-                 width="600" height="400">
-
-            <div class="kartu-isi">
-                <h3>Gamis Ombak Sinapur Karang</h3>
-                <p>Busana dengan motif tradisional yang menarik.</p>
-                <p class="harga">Rp325.000</p>
-            </div>
-        </article>
+        <button type="button"
+            class="tombol-filter"
+            data-kategori="aksesoris"
+            aria-pressed="false">
+            Aksesoris
+        </button>
 
     </div>
+
+</div>
+
+<p id="info-jumlah" class="info-jumlah" aria-live="polite"></p>
+
+<div id="daftar-katalog" class="katalog-grid"></div>
+
+<noscript>
+    <p>Aktifkan JavaScript untuk melihat katalog produk.</p>
+</noscript>
+
 
 </section>
 <!-- ========== TENTANG ========== -->
@@ -203,7 +167,7 @@
     </p>
 
     <p>
-        Dibuat oleh Bilqis (2510010405)
+        Dibuat oleh Bilqis R Aisy (2510010405)
         &middot; Praktikum Pemrograman Web 1 UNISKA MAB
     </p>
 
