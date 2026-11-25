@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -6,12 +7,18 @@
     <meta name="description" content="Katalog kain dan busana Sasirangan khas Banjarmasin.">
 
     <title>Sasirangan Banua | Kain Khas Banjar</title>
-     <link rel="stylesheet" href="css/style.css">
-     <script src="js/katalog.js" defer></script> 
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/katalog.js" defer></script>
+    <!-- dibantu AI -->
+    <script src="js/jadwal-salat.js" defer></script>
 </head>
+
 <body>
+
 <!-- ========== HEADER & NAVIGASI ========== -->
 <header class="header-situs">
+
     <p class="logo">
         <a href="index.html">Sasirangan Banua</a>
     </p>
@@ -24,9 +31,13 @@
             <li><a href="kontak.html">Pesan</a></li>
         </ul>
     </nav>
-</header> <!-- BAGIAN HERO -->
+
+</header>
+
+<!-- ========== KONTEN UTAMA ========== -->
 <main>
 
+    <!-- ========== HERO ========== -->
     <section class="hero" id="beranda">
 
         <h1>Kain Sasirangan Asli Banjarmasin</h1>
@@ -41,121 +52,148 @@
             Lihat Katalog
         </a>
 
-    </section> <!-- BAGIAN KATALOG -->
-<section class="bagian" id="katalog">
-    
-    <h2>Katalog Produk</h2>
+    </section>
 
-    <p>
-        Temukan berbagai pilihan kain dan produk
-        Sasirangan khas Kalimantan Selatan.
-    </p>
+    <!-- ========== KATALOG ========== -->
+    <section class="bagian" id="katalog">
 
-    <div class="kontrol-katalog">
-        <div class="kolom">
-        <label for="cari">Cari produk</label>
-        <input type="search" id="cari"
-            placeholder="Contoh: kemeja, selendang">
-    </div>
+        <h2>Katalog Produk</h2>
 
-    <div class="filter" role="group" aria-label="Filter kategori">
+        <p>
+            Temukan berbagai pilihan kain dan produk
+            Sasirangan khas Kalimantan Selatan.
+        </p>
 
-        <button type="button"
-            class="tombol-filter aktif"
-            data-kategori="semua"
-            aria-pressed="true">
-            Semua
-        </button>
+        <div class="kontrol-katalog">
 
-        <button type="button"
-            class="tombol-filter"
-            data-kategori="kain"
-            aria-pressed="false">
-            Kain
-        </button>
+            <div class="kolom">
+                <label for="cari">Cari produk</label>
 
-        <button type="button"
-            class="tombol-filter"
-            data-kategori="pakaian"
-            aria-pressed="false">
-            Pakaian
-        </button>
+                <input type="search" id="cari"
+                    placeholder="Contoh: kemeja, selendang">
+            </div>
 
-        <button type="button"
-            class="tombol-filter"
-            data-kategori="aksesoris"
-            aria-pressed="false">
-            Aksesoris
-        </button>
+            <div class="filter" role="group" aria-label="Filter kategori">
 
-    </div>
+                <button type="button"
+                    class="tombol-filter aktif"
+                    data-kategori="semua"
+                    aria-pressed="true">
+                    Semua
+                </button>
 
-</div>
+                <button type="button"
+                    class="tombol-filter"
+                    data-kategori="kain"
+                    aria-pressed="false">
+                    Kain
+                </button>
 
-<p id="info-jumlah" class="info-jumlah" aria-live="polite"></p>
+                <button type="button"
+                    class="tombol-filter"
+                    data-kategori="pakaian"
+                    aria-pressed="false">
+                    Pakaian
+                </button>
 
-<div id="daftar-katalog" class="katalog-grid"></div>
+                <button type="button"
+                    class="tombol-filter"
+                    data-kategori="aksesoris"
+                    aria-pressed="false">
+                    Aksesoris
+                </button>
 
-<noscript>
-    <p>Aktifkan JavaScript untuk melihat katalog produk.</p>
-</noscript>
+            </div>
 
+        </div>
 
-</section>
-<!-- ========== TENTANG ========== -->
-<section class="bagian" id="tentang">
+        <p id="info-jumlah" class="info-jumlah" aria-live="polite"></p>
 
-    <h2>Tentang Kami</h2>
+        <div id="daftar-katalog" class="katalog-grid"></div>
 
-    <p>
-        <strong>Sasirangan Banua</strong> adalah UMKM
-        <em>(fiktif, untuk latihan)</em> yang memproduksi
-        kain sasirangan dengan teknik jahit-ikat-celup tradisional.
-        Kami bekerja sama dengan pengrajin lokal untuk menjaga
-        warisan budaya Kalimantan Selatan.
-    </p>
+        <noscript>
+            <p>Aktifkan JavaScript untuk melihat katalog produk.</p>
+        </noscript>
 
-    <h3>Keunggulan Produk</h3>
+    </section>
 
-    <ul>
-        <li>Dikerjakan tangan oleh pengrajin lokal</li>
-        <li>Motif asli warisan budaya Banjar</li>
-        <li>Bahan katun, rayon, dan sutra pilihan</li>
-    </ul>
+    <!-- ========== TENTANG ========== -->
+    <section class="bagian" id="tentang">
 
-    <h3>Jam Buka Galeri</h3>
+        <h2>Tentang Kami</h2>
 
-    <table>
+        <p>
+            <strong>Sasirangan Banua</strong> adalah UMKM
+            <em>(fiktif, untuk latihan)</em> yang memproduksi
+            kain sasirangan dengan teknik jahit-ikat-celup tradisional.
+            Kami bekerja sama dengan pengrajin lokal untuk menjaga
+            warisan budaya Kalimantan Selatan.
+        </p>
 
-        <caption>Jadwal buka galeri Sasirangan Banua (WITA)</caption>
+        <h3>Keunggulan Produk</h3>
 
-        <thead>
-            <tr>
-                <th scope="col">Hari</th>
-                <th scope="col">Jam Buka</th>
-            </tr>
-        </thead>
+        <ul>
+            <li>Dikerjakan tangan oleh pengrajin lokal</li>
+            <li>Motif asli warisan budaya Banjar</li>
+            <li>Bahan katun, rayon, dan sutra pilihan</li>
+        </ul>
 
-        <tbody>
-            <tr>
-                <td>Senin–Kamis</td>
-                <td>08.00–17.00</td>
-            </tr>
+        <h3>Jam Buka Galeri</h3>
 
-            <tr>
-                <td>Jumat</td>
-                <td>08.00–11.00 dan 14.00–17.00</td>
-            </tr>
+        <table>
 
-            <tr>
-                <td>Sabtu–Ahad</td>
-                <td>09.00–16.00</td>
-            </tr>
-        </tbody>
+            <caption>Jadwal buka galeri Sasirangan Banua (WITA)</caption>
 
-    </table>
+            <thead>
+                <tr>
+                    <th scope="col">Hari</th>
+                    <th scope="col">Jam Buka</th>
+                </tr>
+            </thead>
 
-</section>
+            <tbody>
+                <tr>
+                    <td>Senin–Kamis</td>
+                    <td>08.00–17.00</td>
+                </tr>
+
+                <tr>
+                    <td>Jumat</td>
+                    <td>08.00–11.00 dan 14.00–17.00</td>
+                </tr>
+
+                <tr>
+                    <td>Sabtu–Ahad</td>
+                    <td>09.00–16.00</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- ========== JADWAL SALAT (MODUL 4) ========== -->
+    <!-- dibantu AI -->
+    <section class="bagian" id="jadwal">
+
+        <div class="jadwal-salat" id="jadwal-salat">
+
+            <h2>Jadwal Salat Banjarmasin Hari Ini</h2>
+
+            <p class="status" aria-live="polite">
+                Memuat jadwal salat...
+            </p>
+
+            <ul class="daftar-waktu" hidden></ul>
+
+            <p class="sumber">
+                Sumber data: API MyQuran (jadwal Kemenag RI).
+            </p>
+
+        </div>
+
+    </section>
+
 </main>
 
 <!-- ========== FOOTER ========== -->
@@ -172,5 +210,6 @@
     </p>
 
 </footer>
+
 </body>
 </html>
